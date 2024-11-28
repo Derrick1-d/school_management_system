@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <input type="file" multiple>
+    <button>Select file</button>
+
+<script>
+var button=document.querySelector('button');
+var input=document.querySelector('input');
+
+
+button.onclick=function(){
+    input.click()
+}
+
+input.onchange=function(e){
+    var multipleFiles=e.target.files;
+    var singleFile=multipleFiles[0]
+    console.log(singleFile)
+    var fileType=singleFile.type;
+
+}
+
+
+</script>
+</body>
+</html>

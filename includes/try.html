@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="try.css">
+</head>
+
+<body>
+    
+    <div class="navbar">
+        <div class="brand">
+            <p>Welcome to my School Management System</p>
+        </div>
+    
+        <div class="search">
+            <input type="text" placeholder="Search..">
+        </div>
+    
+        <div class="icons">
+            <div class="language-dropdown" onclick="toggleDropdown('languageDropdown')">
+                <i class="fas fa-globe world-icon"></i>
+                <span id="selectedLanguage">English</span>
+                <i class="fas fa-caret-down"></i>
+                <div class="dropdown-content" id="languageDropdown">
+                    <a href="#" onclick="changeLanguage('English')">English</a>
+                    <a href="#" onclick="changeLanguage('Spanish')">Spanish</a>
+                    <a href="#" onclick="changeLanguage('French')">French</a>
+                    <!-- Add more language options as needed -->
+                </div>
+            </div>
+    
+            <div class="bar-icons">
+                <i class="fas fa-bell"></i>
+                <i class="fas fa-envelope"></i>
+            </div>
+    
+            <div class="user-dropdown" onclick="toggleDropdown('userDropdown')">
+                <i class="fas fa-user user-logo"></i>
+                <span id="username">John Doe</span>
+                <i class="fas fa-caret-down"></i>
+                <div class="dropdown-content" id="userDropdown">
+                    <a href="#" onclick="navigateTo('settings.html')">Settings</a>
+                    <a href="#" onclick="navigateTo('logout.html')">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
